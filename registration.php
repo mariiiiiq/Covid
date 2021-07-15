@@ -165,11 +165,15 @@
 					</div>
 					<div class="row">
                         <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-4">
                             <div class="container-login100-form-btn">
                                 <button class="login100-form-btn" name="btnlogin">
                                     Login
                                 </button>
                             </div>
+                        </div>
+                        <div class="col-sm-4">
                         </div>
                     </div>
 				</form>
