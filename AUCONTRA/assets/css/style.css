@@ -1,0 +1,363 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+.primary{
+  background-color: #344e41;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #585a61;
+  
+}
+
+a {
+  color: #3a5a40;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0a2506;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, label, input, button {
+  font-family: "Poppins", sans-serif;
+}
+button{
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 150px 0;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #3a7a4c;
+  font-family: "Poppins", sans-serif;
+}
+#hero h2 {
+  color: #569458;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#hero .download-btn {
+  display: inline-block;
+  outline: none;
+  border: 0;
+  padding: 10px 30px;
+  align-self: center;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #fff;
+  background: #3a5a40;
+  position: relative;;
+}
+#hero .download-btn:hover {
+  background: #7cb18e;
+}
+#hero .download-btn + .download-btn {
+  margin-left: 20px;
+}
+
+
+.loginform{
+  padding-top: 50px;
+  padding-left:25%;
+}
+.inputs{
+    height: 40px;
+    width: 70%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.sgnup{
+  height: 40px;
+    width: 70%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.inputs input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #588157;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+    
+    color: #000;
+    
+}
+
+.inputs input:focus{
+  border-color: #344e41;
+}
+.sgnup input{
+  width: 100%;
+  height: 40px;
+  border: 2px solid #588157;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+  
+  color: #000;
+  
+}
+
+.sgnup input:focus{
+border-color: #344e41;
+}
+input{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+label{
+    position: absolute;
+    
+    bottom: 7px;
+    left: 10px;
+    background-color: #fff;
+    color: #344e41;
+    transition: 0.3s;
+}
+
+.inputs .slct label{
+    position: absolute;
+    
+    pointer-events: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.sgnup .slct label{
+  position: absolute;
+  
+  pointer-events: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label{
+    transform: translateY(-18px);
+    color: #344e41;
+    border-color: #344e41;
+}
+.btn{
+    outline: none;
+    display: inline-block;
+    border: 0;
+    line-height: 1;
+    padding: 10px 30px;
+    align-self: center;
+    transition: all 0.3s linear;
+}
+
+.button{
+  margin-top: 10%;
+  margin-left: 20px;
+  margin-bottom:5%
+}
+.submit{
+    background: #588157;
+    color: #fff;
+}
+.submit:hover, .btn:focus{
+    background-color:#344e41;
+    color: #fff;;
+}
+.clear{
+  color: #588157;
+  background-color: #dad7cd;
+}
+.clear:hover, .btn:focus{
+    color: #fff;
+    background-color: #344e41;
+}
+.icon{
+    position: absolute;
+    z-index: 999999;
+    right: 15px;
+    top: 25%;
+    cursor: pointer;
+    color:#7a797e;
+}
+.modal-content{
+  border-radius: 10px;;
+  
+}
+.qrcode{
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (min-device-width: 575px) and (max-device-width: 991px) {
+  .qrcode{
+    height: 100%;
+  width: 50%;
+  }
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 574px) {
+  .qrcode{
+    height: 100%;
+  width: 40%;
+  }
+}
+
+.logo-img{
+  width: 300px;
+    height: auto;
+    z-index: 99999;
+    position:fixed;
+     left: 50%;
+     top:  15%;
+     margin-left: -153px;
+     margin-top:  -70px;
+}
+.sign{
+  width: 300px;
+     left: 50%;
+     margin-left: -153px;
+}
+.age{
+  width: 90px;
+     left: 50%;
+     margin-left: -4.9rem;
+}
+.bday{
+  width: 200px;
+  left: 50%;
+     margin-left: -128px;
+}
+.slct{
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  border: 2px solid #588157;
+  background-color: #fff;
+}
+.inputs .slct:focus{
+  border-color: #344e41;
+}
+.sgnup .slct:focus{
+  border-color: #344e41;
+}
+.slct:focus~label,
+.slct:not([value=""]):valid~label {
+    transform: translateY(-19px);
+    color: #344e41;
+    border-color: #344e41;
+}
+.sign-up{
+  background: #588157;
+  color: #fff;
+}
+.sign-up:hover, .btn:focus{
+  background-color:#344e41;
+  color: #fff;;
+}
+.cancel{
+  color: #588157;
+  margin-left: .1rem;
+  background-color: #dad7cd;
+}
+.cancel:hover, .btn:focus{
+    color: #fff;
+    background-color: #344e41;
+}
+@media only screen and (max-width: 991px) {
+  #hero {
+    text-align: center;
+  }
+  #hero .download-btn + .download-btn {
+    margin: 0 10px;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 60%;
+  }
+  .button{
+    margin-left:-118px;
+  }
+  .inputs{
+    margin-left: -7px;
+  }
+  .sgnup{
+    margin-left: -9.3rem;
+  }
+  .age{
+    margin-left: -4.7rem;
+  }
+  .bday{
+    margin-left: -7.7rem;
+  }
+  .cancel{
+    margin-left: 7.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+  .sign-up{
+    margin-left: -0.5rem;
+  }
+  .loginform{
+    padding-top: 5%;
+    padding-left:1%;
+
+  }
+  .inputs{
+    width: 100%;
+    margin-left:-3px;
+  }
+  .button{
+    margin-top: 30px;
+    padding-left: 110px;
+  }
+  .cancel{
+    margin-left: 0.55rem;
+  }
+  .sign-up{
+    margin-left: 0.1rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+  .sign-up{
+    margin-left: 0.6rem;
+  }
+  
+  .sgnup{
+    margin-left: -9.13rem;
+  }
+  .age{
+    margin-left: -4.5rem;
+  }
+  .bday{
+    margin-left: -7.55rem;
+  }
+  .sign-up{
+    margin-left: 0.1rem;
+  }
+}
